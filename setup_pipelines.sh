@@ -6,7 +6,7 @@
 ###### User configuration #####
 
 # Set working directory
-workingdir="/home/lkemp/wrapper_scripts/"
+workingdir="/NGS/scratch/KSCBIOM/HumanGenomics/GA_clinical_genomics/run_1"
 
 # Optional - choose a version of the pipeline by specifying a specific git commit
 human_genomics_pipeline_version="a4dc43d7557df41f95f8f5963642b53f5cded99e"
@@ -20,6 +20,8 @@ echo "#############################"
 echo ""
 
 # human_genomics_pipeline
+cd $working_dir
+
 git clone https://github.com/ESR-NZ/human_genomics_pipeline.git
 
 if [ -z "${human_genomics_pipeline_version}" ]
