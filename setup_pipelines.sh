@@ -20,7 +20,7 @@ echo "#############################"
 echo ""
 
 # human_genomics_pipeline
-cd $working_dir
+cd $workingdir
 
 git clone https://github.com/ESR-NZ/human_genomics_pipeline.git
 
