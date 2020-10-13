@@ -6,10 +6,10 @@
 ###### User configuration #####
 
 # Set working directory
-workingdir="/home/lkemp/wrapper_scripts/"
+workingdir="/NGS/scratch/KSCBIOM/HumanGenomics/GA_clinical_genomics/run_1"
 
 # Set the screen name
-screen_name="test_run"
+screen_name="run_1"
 
 # Specify if you are running on the hpc or not
 hpc="Yes"
