@@ -51,11 +51,5 @@ echo "####### Moving files ########"
 echo "#############################"
 echo ""
 
-# Move final bam output
-cp $workingdir/human_genomics_pipeline/results/mapped/*_recalibrated.bam* /NGS/clinicalgenomics/GA_clinicalWGS/wellington/bams/
-
-# Move final vcf output
-cp $workingdir/vcf_annotation_pipeline/results/readyforscout/*_filtered_annotated_readyforscout.vcf.gz /NGS/clinicalgenomics/GA_clinicalWGS/wellington/vcf/
-
-# Move full pipeline runs
-mv $workingdir /NGS/clinicalgenomics/GA_clinicalWGS/wellington/runs/
+# Backup full pipeline run
+cp $workingdir /NGS/clinicalgenomics/GA_clinicalWGS/wellington/runs/
