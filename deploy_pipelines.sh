@@ -8,9 +8,6 @@
 # Set working directory
 workingdir="/NGS/scratch/KSCBIOM/HumanGenomics/GA_clinical_genomics/run_1"
 
-# Set the screen name
-screen_name="run_1"
-
 # Specify if you are running on the hpc or not
 hpc="Yes"
 
@@ -20,9 +17,6 @@ echo "#############################"
 echo "## Setting up environment ###"
 echo "#############################"
 echo ""
-
-# Create screen
-screen -S $screen_name
 
 # Activate conda environment
 conda activate pipeline_run_env
