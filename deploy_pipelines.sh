@@ -31,10 +31,10 @@ echo ""
 # Run human_genomics_pipeline
 cd $workingdir/human_genomics_pipeline/workflow/
 
-if hpc="No"
+if [[ $hpc="No" ]] || [[ $hpc="no" ]]
 then
 bash run.sh
-else hpc="Yes"
+else [[ $hpc="Yes" ]] || [[ $hpc="yes" ]]
 bash run_hpc.sh
 fi
 
@@ -44,10 +44,10 @@ bash report.sh
 # Run vcf_annotation_pipeline
 cd $workingdir/vcf_annotation_pipeline/workflow/
 
-if hpc="No"
+if [[ $hpc="No" ]] || [[ $hpc="no" ]]
 then
 bash run.sh
-else hpc="Yes"
+else [[ $hpc="Yes" ]] || [[ $hpc="yes" ]]
 bash run_hpc.sh
 fi
 
