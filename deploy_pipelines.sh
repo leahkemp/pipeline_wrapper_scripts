@@ -19,7 +19,7 @@ echo "#############################"
 echo ""
 
 # Activate conda environment
-conda activate pipeline_run_env
+source activate pipeline_run_env
 
 ####### Run pipelines #######
 
