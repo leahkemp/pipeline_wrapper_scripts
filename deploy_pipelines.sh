@@ -8,8 +8,8 @@
 # Set working directory
 workingdir="/NGS/scratch/KSCBIOM/HumanGenomics/GA_clinical_genomics/run_1"
 
-# Specify if you are running on the hpc or not
-hpc="Yes"
+# Specify the runscript to use
+run_script="run_hpc.sh"
 
 ####### Setup environment #######
 
@@ -31,12 +31,7 @@ echo ""
 # Run human_genomics_pipeline
 cd $workingdir/human_genomics_pipeline/workflow/
 
-if [[ $hpc="No" ]] || [[ $hpc="no" ]]
-then
-bash run.sh
-else [[ $hpc="Yes" ]] || [[ $hpc="yes" ]]
-bash run_hpc.sh
-fi
+bash $run_script
 
 # Create report
 bash report.sh
@@ -44,12 +39,7 @@ bash report.sh
 # Run vcf_annotation_pipeline
 cd $workingdir/vcf_annotation_pipeline/workflow/
 
-if [[ $hpc="No" ]] || [[ $hpc="no" ]]
-then
-bash run.sh
-else [[ $hpc="Yes" ]] || [[ $hpc="yes" ]]
-bash run_hpc.sh
-fi
+bash $run_script
 
 # Create report
 bash report.sh
