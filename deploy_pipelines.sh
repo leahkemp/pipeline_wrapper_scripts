@@ -40,7 +40,7 @@ cd $workingdir/human_genomics_pipeline/workflow/
 if hpc="No" || hpc="no"
 then
 bash run.sh
-elif hpc="Yes" || hpc="yes"
+else hpc="Yes" || hpc="yes"
 bash run_hpc.sh
 fi
 
@@ -53,7 +53,7 @@ cd $workingdir/vcf_annotation_pipeline/workflow/
 if hpc="No" || hpc="no"
 then
 bash run.sh
-elif hpc="Yes" || hpc="yes"
+else hpc="Yes" || hpc="yes"
 bash run_hpc.sh
 fi
 
