@@ -8,9 +8,9 @@
 # Set working directory
 workingdir="/NGS/scratch/KSCBIOM/HumanGenomics/GA_clinical_genomics/run_1"
 
-# Optional - choose a version of the pipeline by specifying a specific git commit
-human_genomics_pipeline_version="a4dc43d7557df41f95f8f5963642b53f5cded99e"
-vcf_annotation_pipeline_version="f50944f5aee9e022671a74cd466d763397c6686b"
+# Optional - choose a version of the pipeline by specifying a specific version or git commit
+human_genomics_pipeline_version="v1.0.0"
+vcf_annotation_pipeline_version="v1.0.0"
 
 ####### Clone pipelines #######
 
