@@ -1,45 +1,26 @@
-# Wrapper script workflow
+# Pipeline wrapper scripts
 
-The wrapper scripts `setup_pipelines.sh` and `deploy_pipelines.sh` can be used to automate the process of analysing WGS clinical data on ESR's cluster (ORAC). This document describes how to use these wrapper scripts. This workflow will take you from cloning the pipelines to where the WGS data is location, setting up a screen to run the analyses in, activating the pipeline conda environment, analysing the WGS data (running human_genomics_pipeline and vcf_annotation_pipeline), creating the final reports and backing up the the whole pipeline run to `/NGS/clinicalgenomics/GA_clinicalWGS/wellington/` on ORAC.
+This repo contains scripts and pre-configured configuration files used in the analysis of clinical genomes as a part of the [genomics aotearoa clinical genomics project](https://www.genomics-aotearoa.org.nz/projects/clinical-genomics) on ESR's production network.
 
-Note. sex/ancestry checks with peddy/somalier will still need to be manually undertaken
+Descriptions of how to use these scripts/config files is described in a the following document: [Standard operating procedure (SOP) for transferring, analysing and loading genomes into WDHB production scout instance](https://github.com/leahkemp/WDHB_production_scout/blob/dev/phase_2/SOP/sop.md)
 
-## Assumptions:
+## Wrapper scripts
 
-- GATK resource bundle and other databases already downloaded
-- The pipeline_run_env conda environment has been created (see how to do this [here](https://github.com/ESR-NZ/human_genomics_pipeline#7-create-and-activate-a-conda-environment-with-python-and-snakemake-installed))
-- Recommended to run this within [screen](https://linux.die.net/man/1/screen)
+The wrapper scripts  can be used to automate the process of analysing WGS clinical data on ESR's production network. There are three bash scripts which automate the following steps:
 
-## 1. Setup pipelines
+- `./scripts/setup_pipelines.sh`
+    - Clone [human_genomics_pipeline](https://github.com/ESR-NZ/human_genomics_pipeline/blob/master/docs/running_on_a_hpc.md#2-take-the-pipeline-to-the-data-on-the-hpc)
+    - Clone [vcf_annotation_pipeline](https://github.com/ESR-NZ/vcf_annotation_pipeline/blob/master/docs/running_on_a_hpc.md#2-take-the-pipeline-to-the-data-on-the-hpc)
+  - Put pipeline configuration files in place for standard pipeline runs on ESR's production cluster for this project
+- `./scripts/check_input_files.sh`
+  - Check input files for the pipelines are downloaded and in the expected location
+- `./scripts/deploy_pipelines.sh`
+  - Create and activate a conda environment to run the pipelines in
+  - Run [human_genomics_pipeline](https://github.com/ESR-NZ/human_genomics_pipeline)
+  - Run [vcf_annotation_pipeline](https://github.com/ESR-NZ/vcf_annotation_pipeline)
 
-In the `setup_pipelines.sh` script, set:
+These wrapper scripts utilise user input values from the small configuration file at `./config/config.yaml`.
 
-- The working directory (where your data to be analysed is) `workingdir=""`
-- The version of the pipelines to use (a git commit) `human_genomics_pipeline_version=""` and `vcf_annotation_pipeline_version=""` (leave blank to use the latest version of the pipelines)
+## Pipeline configuration files
 
-Setup the pipelines
-
-```bash
-bash setup_pipelines.sh
-```
-
-## 2. Configure pipelines
-
-Configure the appropriate files in:
-- `./human_genomics_pipeline/config/`
-- `./human_genomics_pipeline/workflow/`
-- `./vcf_annotation_pipeline/config/`
-- `./vcf_annotation_pipeline/workflow/`
-
-## 3. Deploy pipelines
-
-In the `deploy_pipelines.sh` script, set:
-
-- The working directory (where your data to be analysed is) `workingdir=""`
-- The name of the runscript to run `run_script=""`
-
-Deploy the pipelines
-
-```bash
-bash deploy_pipelines.sh
-```
+Pre-configured configuration files and runscripts for both [human_genomics_pipeline](https://github.com/ESR-NZ/human_genomics_pipeline) and [vcf_annotation_pipeline](https://github.com/ESR-NZ/vcf_annotation_pipeline) that are standard for analysing whole genomes on ESR production network. The files are available for both [single](./pipeline_config_files/single/) and [cohort](./pipeline_config_files/cohort/) pipeline runs.

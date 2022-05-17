@@ -1,0 +1,17 @@
+# set the path to where you wish to where the fastq data to be analysed is located
+fastq_dir: /NGS/scratch/KSCBIOM/HumanGenomics/GA_clinical_genomics/run_12/fastq/
+
+# optional - choose a version of the pipelines to clone by specifying a specific version or git commit
+# if left blank, the latest version of the pipelines will be cloned
+# see https://github.com/ESR-NZ/human_genomics_pipeline and https://github.com/ESR-NZ/vcf_annotation_pipeline
+human_genomics_pipeline_version: v2.1.0
+vcf_annotation_pipeline_version: v1.1.0
+
+# type of input data (either 'Single' or 'Cohort')
+data: "Single"
+
+# should the pipeline be GPU accelerated where possible? (either 'Yes' or 'No')
+gpu_accelerated: "Yes"
+
+# provide an email address to which a notification can be sent when pipelines have finished
+email_notification: "leah.kemp@esr.cri.nz"
