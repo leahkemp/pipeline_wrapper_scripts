@@ -24,3 +24,7 @@ These wrapper scripts utilise user input values from the small configuration fil
 ## Pipeline configuration files
 
 Pre-configured configuration files and runscripts for both [human_genomics_pipeline](https://github.com/ESR-NZ/human_genomics_pipeline) and [vcf_annotation_pipeline](https://github.com/ESR-NZ/vcf_annotation_pipeline) that are standard for analysing whole genomes on ESR production network. The files are available for both [single](./pipeline_config_files/single/) and [cohort](./pipeline_config_files/cohort/) pipeline runs.
+
+## Conda environments
+
+Conda environment files are available at `./envs/` to re-create conda environments with software used in this document
