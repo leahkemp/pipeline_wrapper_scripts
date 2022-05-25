@@ -15,10 +15,10 @@ GPU_ACCELERATED: "Yes"
 PREPARE_FOR_SCOUT: "Yes"
 
 # File paths to the reference genome (.fasta)
-REFGENOME: "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/human_g1k_v37_decoy.fasta"
+REFGENOME: "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/human_g1k_v37_decoy.fasta"
 
 # File path to dbSNP database
-dbSNP: "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/dbsnp_138.b37.vcf"
+dbSNP: "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/dbsnp_138.b37.vcf"
 
 # Temporary file directory
 TEMPDIR: "/NGS/scratch/KSCBIOM/HumanGenomics/tmp/"
@@ -82,9 +82,9 @@ COHORT:
 
     # ...provide a list of resources
     RESOURCES:
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_phase1.indels.b37.vcf
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/dbsnp_138.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_phase1.indels.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/dbsnp_138.b37.vcf
 
     # ...provide associated machine learning parameters
     PARAMS:
@@ -97,10 +97,10 @@ COHORT:
 
     # ...provide a list of resources
     RESOURCES:
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/hapmap_3.3.b37.vcf
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_omni2.5.b37.vcf
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_phase1.indels.b37.vcf
-    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/dbsnp_138.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/hapmap_3.3.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_omni2.5.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_phase1.indels.b37.vcf
+    - /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/dbsnp_138.b37.vcf
 
     # ...provide associated machine learning parameters
     PARAMS:

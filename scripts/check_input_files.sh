@@ -35,46 +35,46 @@ echo "############################################"
 echo ""
 
 # check for presence of several input files and mention if they or don't exist
-if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/human_g1k_v37.fasta" ;
+if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/human_g1k_v37_decoy.fasta" ;
 then
-echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/human_g1k_v37.fasta"
+echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/human_g1k_v37_decoy.fasta"
 else
-echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/human_g1k_v37.fasta"
+echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/human_g1k_v37_decoy.fasta"
 fi
 
-if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/dbsnp_138.b37.vcf" ;
+if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/dbsnp_138.b37.vcf" ;
 then
-echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/dbsnp_138.b37.vcf"
+echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/dbsnp_138.b37.vcf"
 else
-echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/dbsnp_138.b37.vcf"
+echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/dbsnp_138.b37.vcf"
 fi
 
-if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf" ;
+if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf" ;
 then
-echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
+echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
 else
-echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
+echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
 fi
 
-if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_phase1.indels.b37.vcf" ;
+if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_phase1.indels.b37.vcf" ;
 then
-echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_phase1.indels.b37.vcf"
+echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_phase1.indels.b37.vcf"
 else
-echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_phase1.indels.b37.vcf"
+echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_phase1.indels.b37.vcf"
 fi
 
-if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/hapmap_3.3.b37.vcf" ;
+if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/hapmap_3.3.b37.vcf" ;
 then
-echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/hapmap_3.3.b37.vcf"
+echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/hapmap_3.3.b37.vcf"
 else
-echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/hapmap_3.3.b37.vcf"
+echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/hapmap_3.3.b37.vcf"
 fi
 
-if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf" ;
+if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf" ;
 then
-echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
+echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
 else
-echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
+echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/Mills_and_1000G_gold_standard.indels.b37.vcf"
 fi
 
 if test -d "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/vep/GRCh37/" ;
@@ -101,11 +101,11 @@ fi
 # there is an additional input file for the pipelines for cohort runs
 if [[ $data == 'Cohort' || $data == 'cohort' ]]; then
 
-    if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_omni2.5.b37.vcf" ;
+    if test -f "/NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_omni2.5.b37.vcf" ;
     then
-    echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_omni2.5.b37.vcf"
+    echo "File exists: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_omni2.5.b37.vcf"
     else
-    echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/b37/1000G_omni2.5.b37.vcf"
+    echo "File DOESN'T exist: /NGS/scratch/KSCBIOM/HumanGenomics/publicData/gatk_resource_bundle/b37/1000G_omni2.5.b37.vcf"
     fi
 
 fi
