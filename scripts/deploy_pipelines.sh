@@ -36,7 +36,7 @@ echo ""
 
 # create conda environemnt required for pipeline runs
 # if a conda environment already exists under the name "pipeline_run_env", it will be overwritten
-cd $workingdir/human_genomics_pipeline/workflow/
+cd $fastq_dir/../human_genomics_pipeline/workflow/
 mamba env create --force -q -f pipeline_run_env.yml
 
 # activate conda environment
@@ -50,7 +50,7 @@ echo "#############################"
 echo ""
 
 # run human_genomics_pipeline
-cd $workingdir/human_genomics_pipeline/workflow/
+cd $fastq_dir/../human_genomics_pipeline/workflow/
 
 bash $run_script
 
@@ -58,7 +58,7 @@ bash $run_script
 bash report.sh
 
 # run vcf_annotation_pipeline
-cd $workingdir/vcf_annotation_pipeline/workflow/
+cd $fastq_dir/../vcf_annotation_pipeline/workflow/
 
 bash $run_script
 
