@@ -44,23 +44,28 @@ source activate pipeline_run_env
 
 ####### Run pipelines #######
 
-echo "#############################"
-echo "##### Running pipelines #####"
-echo "#############################"
+echo "###########################################"
+echo "##### Running human_genomics_pipeline #####"
+echo "###########################################"
 echo ""
 
 # run human_genomics_pipeline
 cd $fastq_dir/../human_genomics_pipeline/workflow/
 
-bash $run_script
+bash run_hpc.sh
 
 # create report
 bash report.sh
 
+echo "###########################################"
+echo "##### Running vcf_annotation_pipeline #####"
+echo "###########################################"
+echo ""
+
 # run vcf_annotation_pipeline
 cd $fastq_dir/../vcf_annotation_pipeline/workflow/
 
-bash $run_script
+bash run_hpc.sh
 
 # create report
 bash report.sh
