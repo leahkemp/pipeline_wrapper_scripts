@@ -41,7 +41,7 @@ THREADS: 8
 MAXMEMORY: "80g"
 
 # Maximum number of GPU's to be used per rule/sample for gpu-accelerated runs (eg `1` for 1 GPU)
-GPU: 1
+GPU: 2
 
 ##############################
 ###### Variant filtering #####
